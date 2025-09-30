@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="nature">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crèche L'Arche de Noé - Crèche inclusive à Bayonne accueillant 26 enfants de 10 semaines à 6 ans. 1/3 des places réservées aux enfants en situation de handicap.">
+    <meta name="keywords" content="crèche, Bayonne, inclusive, handicap, enfants, garde d'enfants, 64">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="L'Arche de Noé - Crèche Inclusive à Bayonne">
+    <meta property="og:description" content="Où chaque enfant grandit à son rythme, au contact des autres">
+    <meta property="og:image" content="/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="L'Arche de Noé - Crèche Inclusive à Bayonne">
+    <meta name="twitter:description" content="Où chaque enfant grandit à son rythme, au contact des autres">
+
+    <title>L'Arche de Noé - Crèche Inclusive à Bayonne</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/output.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="smooth-scroll">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="nav-sticky transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-2xl font-heading font-bold text-primary">
+                        L'Arche de Noé
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-6">
+                        <a href="#home" class="nav-link text-dark hover:text-primary transition-colors" data-i18n="nav.home">Accueil</a>
+                        <a href="#about" class="nav-link text-dark hover:text-primary transition-colors" data-i18n="nav.about">La Crèche</a>
+                        <a href="#pedagogy" class="nav-link text-dark hover:text-primary transition-colors" data-i18n="nav.pedagogy">Pédagogie</a>
+                        <a href="#practical" class="nav-link text-dark hover:text-primary transition-colors" data-i18n="nav.practical">Infos Pratiques</a>
+                        <a href="#gallery" class="nav-link text-dark hover:text-primary transition-colors" data-i18n="nav.gallery">Galerie</a>
+                        <a href="#contact" class="nav-link text-dark hover:text-primary transition-colors" data-i18n="nav.contact">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Theme & Language Selectors -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <!-- Theme Selector -->
+                    <div class="relative">
+                        <button id="theme-btn" class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-light transition-colors" aria-label="Changer de thème">
+                            <i data-lucide="palette" class="w-5 h-5"></i>
+                        </button>
+                        <div id="theme-menu" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 z-50">
+                            <button data-theme="rainbow" class="w-full text-left px-4 py-2 hover:bg-light transition-colors rounded-t-lg">
+                                Arc-en-ciel
+                            </button>
+                            <button data-theme="nature" class="w-full text-left px-4 py-2 hover:bg-light transition-colors">
+                                Nature
+                            </button>
+                            <button data-theme="soft" class="w-full text-left px-4 py-2 hover:bg-light transition-colors rounded-b-lg">
+                                Douceur
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Language Selector -->
+                    <div class="relative">
+                        <button id="lang-btn" class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-light transition-colors" aria-label="Changer de langue">
+                            <i data-lucide="globe" class="w-5 h-5"></i>
+                            <span id="current-lang" class="text-sm font-semibold">FR</span>
+                        </button>
+                        <div id="lang-menu" class="hidden absolute right-0 mt-2 w-32 bg-white rounded-lg shadow-lg border border-gray-200 z-50">
+                            <button data-lang="fr" class="w-full text-left px-4 py-2 hover:bg-light transition-colors rounded-t-lg">
+                                Français
+                            </button>
+                            <button data-lang="eu" class="w-full text-left px-4 py-2 hover:bg-light transition-colors rounded-b-lg">
+                                Euskara
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 rounded-md hover:bg-light transition-colors" aria-label="Menu principal">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 rounded-md hover:bg-light transition-colors" data-i18n="nav.home">Accueil</a>
+                <a href="#about" class="block px-3 py-2 rounded-md hover:bg-light transition-colors" data-i18n="nav.about">La Crèche</a>
+                <a href="#pedagogy" class="block px-3 py-2 rounded-md hover:bg-light transition-colors" data-i18n="nav.pedagogy">Pédagogie</a>
+                <a href="#practical" class="block px-3 py-2 rounded-md hover:bg-light transition-colors" data-i18n="nav.practical">Infos Pratiques</a>
+                <a href="#gallery" class="block px-3 py-2 rounded-md hover:bg-light transition-colors" data-i18n="nav.gallery">Galerie</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md hover:bg-light transition-colors" data-i18n="nav.contact">Contact</a>
+
+                <div class="border-t pt-2 mt-2">
+                    <div class="px-3 py-2 text-sm font-semibold" data-i18n="nav.theme">Thème</div>
+                    <button data-theme="rainbow" class="block w-full text-left px-3 py-2 rounded-md hover:bg-light transition-colors">Arc-en-ciel</button>
+                    <button data-theme="nature" class="block w-full text-left px-3 py-2 rounded-md hover:bg-light transition-colors">Nature</button>
+                    <button data-theme="soft" class="block w-full text-left px-3 py-2 rounded-md hover:bg-light transition-colors">Douceur</button>
+                </div>
+
+                <div class="border-t pt-2 mt-2">
+                    <div class="px-3 py-2 text-sm font-semibold" data-i18n="nav.language">Langue</div>
+                    <button data-lang="fr" class="block w-full text-left px-3 py-2 rounded-md hover:bg-light transition-colors">Français</button>
+                    <button data-lang="eu" class="block w-full text-left px-3 py-2 rounded-md hover:bg-light transition-colors">Euskara</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+        </div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 z-10 text-center">
+            <h1 class="text-5xl sm:text-6xl md:text-7xl font-heading font-bold mb-6 fade-in-up">
+                <span class="text-primary" data-i18n="hero.title">L'Arche de Noé</span>
+            </h1>
+            <p class="text-2xl sm:text-3xl font-heading text-accent mb-4 fade-in-up" style="animation-delay: 0.2s;" data-i18n="hero.subtitle">
+                Crèche Inclusive à Bayonne
+            </p>
+            <p class="text-lg sm:text-xl text-dark mb-12 max-w-3xl mx-auto fade-in-up" style="animation-delay: 0.4s;" data-i18n="hero.tagline">
+                Où chaque enfant grandit à son rythme, au contact des autres
+            </p>
+            <a href="#contact" class="btn-primary fade-in-up inline-flex items-center space-x-2" style="animation-delay: 0.6s;">
+                <span data-i18n="hero.cta">Demander une visite</span>
+                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i data-lucide="chevron-down" class="w-8 h-8 text-primary"></i>
+        </div>
+    </section>
+
+    <!-- Valeurs Section -->
+    <section id="values" class="py-20 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-heading font-bold text-center mb-16 text-dark" data-i18n="values.title">Nos Valeurs</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Inclusion -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="heart" class="w-8 h-8 text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-dark" data-i18n="values.inclusion.title">Inclusion</h3>
+                    <p class="text-dark/80" data-i18n="values.inclusion.text">1/3 de nos places sont dédiées aux enfants en situation de handicap</p>
+                </div>
+
+                <!-- Accompagnement personnalisé -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="sparkles" class="w-8 h-8 text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-dark" data-i18n="values.personalized.title">Accompagnement personnalisé</h3>
+                    <p class="text-dark/80" data-i18n="values.personalized.text">Chaque enfant est unique, notre accueil s'adapte à ses besoins</p>
+                </div>
+
+                <!-- Partenariat école -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="graduation-cap" class="w-8 h-8 text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-dark" data-i18n="values.partnership.title">Partenariat école</h3>
+                    <p class="text-dark/80" data-i18n="values.partnership.text">Scolarisation progressive en lien avec l'école Largenté</p>
+                </div>
+
+                <!-- Petite structure -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="home" class="w-8 h-8 text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-dark" data-i18n="values.smallStructure.title">Petite structure</h3>
+                    <p class="text-dark/80" data-i18n="values.smallStructure.text">26 places pour un accueil familial et attentionné</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="py-20 bg-primary/10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-heading font-bold text-center mb-16 text-dark" data-i18n="stats.title">En Chiffres</h2>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+                <div class="text-center">
+                    <div class="text-5xl font-heading font-bold text-primary mb-2">26</div>
+                    <p class="text-lg text-dark" data-i18n="stats.places">places</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-heading font-bold text-secondary mb-2">10 sem.</div>
+                    <p class="text-lg text-dark" data-i18n="stats.ages">à 6 ans</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-heading font-bold text-accent mb-2">8h-18h30</div>
+                    <p class="text-lg text-dark" data-i18n="stats.hours">Horaires</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-heading font-bold text-primary mb-2">Lun-Ven</div>
+                    <p class="text-lg text-dark" data-i18n="stats.days">5 jours/semaine</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-heading font-bold text-center mb-6 text-dark" data-i18n="about.title">Notre Crèche</h2>
+                <p class="text-xl text-center text-accent mb-12" data-i18n="about.subtitle">Une approche inclusive et bienveillante</p>
+
+                <div class="bg-light rounded-2xl p-8 mb-12">
+                    <p class="text-lg text-dark leading-relaxed" data-i18n="about.text">
+                        Au sein de notre crèche, le handicap n'est pas un obstacle, mais un tremplin pour créer une dynamique positive et constructive dans l'accompagnement de tous les enfants. La crèche s'organise pour que l'accueil s'ajuste au mieux à chaque enfant et aux besoins de ses parents.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-secondary/10 rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <i data-lucide="users" class="w-8 h-8 text-secondary mr-3"></i>
+                            <h3 class="text-2xl font-heading font-semibold text-dark" data-i18n="about.team.title">Notre Équipe</h3>
+                        </div>
+                        <p class="text-dark/80" data-i18n="about.team.text">Une équipe qualifiée et passionnée, dévouée au bien-être de vos enfants</p>
+                    </div>
+
+                    <div class="bg-primary/10 rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <i data-lucide="building" class="w-8 h-8 text-primary mr-3"></i>
+                            <h3 class="text-2xl font-heading font-semibold text-dark" data-i18n="about.spaces.title">Nos Locaux</h3>
+                        </div>
+                        <p class="text-dark/80" data-i18n="about.spaces.text">Des espaces adaptés, chaleureux et sécurisés pour l'épanouissement de chaque enfant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pedagogy Section -->
+    <section id="pedagogy" class="py-20 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-heading font-bold text-center mb-16 text-dark" data-i18n="pedagogy.title">Notre Pédagogie</h2>
+
+            <div class="max-w-6xl mx-auto space-y-16">
+                <!-- Approche inclusive -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-heading font-semibold mb-4 text-primary" data-i18n="pedagogy.approach.title">Approche Inclusive</h3>
+                    <p class="text-lg text-dark/80 leading-relaxed" data-i18n="pedagogy.approach.text">
+                        Chacun grandit au contact des autres. L'inclusion bénéficie à tous les enfants en développant l'empathie, le respect et l'entraide.
+                    </p>
+                </div>
+
+                <!-- Journée type -->
+                <div>
+                    <h3 class="text-2xl font-heading font-semibold mb-8 text-center text-dark" data-i18n="pedagogy.schedule.title">Une Journée Type</h3>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div class="bg-white rounded-xl p-4 border-l-4 border-primary">
+                            <p class="text-dark" data-i18n="pedagogy.schedule.morning">8h00-9h00 : Accueil échelonné</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 border-l-4 border-secondary">
+                            <p class="text-dark" data-i18n="pedagogy.schedule.activities1">9h00-10h30 : Activités d'éveil</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 border-l-4 border-accent">
+                            <p class="text-dark" data-i18n="pedagogy.schedule.snack">10h30-11h00 : Collation</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 border-l-4 border-primary">
+                            <p class="text-dark" data-i18n="pedagogy.schedule.outdoor">11h00-11h45 : Jeux libres / Extérieur</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 border-l-4 border-secondary">
+                            <p class="text-dark" data-i18n="pedagogy.schedule.lunch">11h45-12h45 : Repas</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 border-l-4 border-accent">
+                            <p class="text-dark" data-i18n="pedagogy.schedule.nap">12h45-15h00 : Sieste / Temps calme</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 border-l-4 border-primary">
+                            <p class="text-dark" data-i18n="pedagogy.schedule.gouter">15h00-15h30 : Goûter</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 border-l-4 border-secondary col-span-2">
+                            <p class="text-dark" data-i18n="pedagogy.schedule.activities2">15h30-18h30 : Activités / Départ échelonné</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activités -->
+                <div class="bg-accent/10 rounded-2xl p-8">
+                    <h3 class="text-2xl font-heading font-semibold mb-6 text-dark" data-i18n="pedagogy.activities.title">Nos Activités</h3>
+                    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="music" class="w-5 h-5 text-accent"></i>
+                            <span class="text-dark" data-i18n="pedagogy.activities.list.0">Éveil musical</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="activity" class="w-5 h-5 text-accent"></i>
+                            <span class="text-dark" data-i18n="pedagogy.activities.list.1">Motricité</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="hand" class="w-5 h-5 text-accent"></i>
+                            <span class="text-dark" data-i18n="pedagogy.activities.list.2">Activités sensorielles</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="book-open" class="w-5 h-5 text-accent"></i>
+                            <span class="text-dark" data-i18n="pedagogy.activities.list.3">Lecture et contes</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="palette" class="w-5 h-5 text-accent"></i>
+                            <span class="text-dark" data-i18n="pedagogy.activities.list.4">Arts plastiques</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="droplet" class="w-5 h-5 text-accent"></i>
+                            <span class="text-dark" data-i18n="pedagogy.activities.list.5">Jeux d'eau et de sable</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scolarisation -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-heading font-semibold mb-4 text-secondary" data-i18n="pedagogy.school.title">Scolarisation Progressive</h3>
+                    <p class="text-lg text-dark/80 leading-relaxed" data-i18n="pedagogy.school.text">
+                        En partenariat avec l'école maternelle Largenté, nous accompagnons les enfants vers une scolarisation douce et progressive.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practical Info Section -->
+    <section id="practical" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-heading font-bold text-center mb-16 text-dark" data-i18n="practical.title">Informations Pratiques</h2>
+
+            <div class="max-w-5xl mx-auto space-y-12">
+                <!-- Capacité et horaires -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-primary/10 rounded-xl p-6">
+                        <h3 class="text-xl font-heading font-semibold mb-4 text-dark flex items-center">
+                            <i data-lucide="baby" class="w-6 h-6 mr-2 text-primary"></i>
+                            <span data-i18n="practical.capacity.title">Capacité & Âges</span>
+                        </h3>
+                        <p class="text-dark/80" data-i18n="practical.capacity.text">Accueil de 10 semaines à 6 ans | 26 places dont 1/3 prioritaires</p>
+                    </div>
+
+                    <div class="bg-secondary/10 rounded-xl p-6">
+                        <h3 class="text-xl font-heading font-semibold mb-4 text-dark flex items-center">
+                            <i data-lucide="clock" class="w-6 h-6 mr-2 text-secondary"></i>
+                            <span data-i18n="practical.hours.title">Horaires</span>
+                        </h3>
+                        <p class="text-dark/80">
+                            <span data-i18n="practical.hours.open">Lundi au Vendredi</span><br>
+                            <span data-i18n="practical.hours.time" class="font-semibold">8h00 - 18h30</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarifs -->
+                <div class="bg-light rounded-2xl p-8">
+                    <h3 class="text-2xl font-heading font-semibold mb-4 text-dark flex items-center">
+                        <i data-lucide="euro" class="w-6 h-6 mr-2 text-accent"></i>
+                        <span data-i18n="practical.pricing.title">Tarifs</span>
+                    </h3>
+                    <p class="text-dark/80 mb-6" data-i18n="practical.pricing.text">Participation mensuelle selon le barème national CNAF</p>
+
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="border-b-2 border-primary">
+                                    <th class="py-3 px-4 font-semibold" data-i18n="practical.pricing.children">Nombre d'enfants</th>
+                                    <th class="py-3 px-4 text-center">1</th>
+                                    <th class="py-3 px-4 text-center">2</th>
+                                    <th class="py-3 px-4 text-center">3</th>
+                                    <th class="py-3 px-4 text-center">4+</th>
+                                    <th class="py-3 px-4 text-center">8+</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b">
+                                    <td class="py-3 px-4 font-medium" data-i18n="practical.pricing.subtitle">Taux horaire base CAF</td>
+                                    <td class="py-3 px-4 text-center">0,06%</td>
+                                    <td class="py-3 px-4 text-center">0,05%</td>
+                                    <td class="py-3 px-4 text-center">0,04%</td>
+                                    <td class="py-3 px-4 text-center">0,03%</td>
+                                    <td class="py-3 px-4 text-center">0,02%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p class="text-sm text-dark/70 mt-4" data-i18n="practical.pricing.info">Calcul basé sur vos ressources et la composition familiale</p>
+                </div>
+
+                <!-- Inscription -->
+                <div class="bg-accent/10 rounded-2xl p-8">
+                    <h3 class="text-2xl font-heading font-semibold mb-6 text-dark" data-i18n="practical.enrollment.title">Inscription</h3>
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">1</div>
+                            <p class="text-dark/80 pt-1" data-i18n="practical.enrollment.step1">Contacter la directrice pour une visite</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">2</div>
+                            <p class="text-dark/80 pt-1" data-i18n="practical.enrollment.step2">Constitution du dossier</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">3</div>
+                            <p class="text-dark/80 pt-1" data-i18n="practical.enrollment.step3">Validation de l'inscription</p>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn-primary" data-i18n="practical.enrollment.cta">Demander une inscription</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-heading font-bold text-center mb-12 text-dark" data-i18n="gallery.title">Galerie Photos</h2>
+
+            <!-- Gallery filters -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="gallery-filter active px-6 py-2 rounded-full bg-primary text-white transition-colors" data-filter="all" data-i18n="gallery.categories.all">Tout</button>
+                <button class="gallery-filter px-6 py-2 rounded-full bg-white hover:bg-primary hover:text-white transition-colors" data-filter="spaces" data-i18n="gallery.categories.spaces">Nos Espaces</button>
+                <button class="gallery-filter px-6 py-2 rounded-full bg-white hover:bg-primary hover:text-white transition-colors" data-filter="activities" data-i18n="gallery.categories.activities">Activités</button>
+                <button class="gallery-filter px-6 py-2 rounded-full bg-white hover:bg-primary hover:text-white transition-colors" data-filter="events" data-i18n="gallery.categories.events">Événements</button>
+            </div>
+
+            <!-- Gallery grid -->
+            <div id="gallery-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Images will be loaded via JavaScript with placeholders -->
+                <div class="gallery-item" data-category="spaces">
+                    <img src="https://images.unsplash.com/photo-1560969184-10fe8719e047?w=500&h=400&fit=crop" alt="Espace jeux" class="w-full h-64 object-cover rounded-xl cursor-pointer hover:scale-105 transition-transform" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="spaces">
+                    <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=500&h=400&fit=crop" alt="Salle de repos" class="w-full h-64 object-cover rounded-xl cursor-pointer hover:scale-105 transition-transform" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="activities">
+                    <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=500&h=400&fit=crop" alt="Activités créatives" class="w-full h-64 object-cover rounded-xl cursor-pointer hover:scale-105 transition-transform" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="activities">
+                    <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=500&h=400&fit=crop" alt="Jeux éducatifs" class="w-full h-64 object-cover rounded-xl cursor-pointer hover:scale-105 transition-transform" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="spaces">
+                    <img src="https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=500&h=400&fit=crop" alt="Espace extérieur" class="w-full h-64 object-cover rounded-xl cursor-pointer hover:scale-105 transition-transform" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=500&h=400&fit=crop" alt="Événement spécial" class="w-full h-64 object-cover rounded-xl cursor-pointer hover:scale-105 transition-transform" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <button id="lightbox-close" class="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 z-50" aria-label="Fermer">&times;</button>
+        <img id="lightbox-img" src="" alt="" class="max-w-full max-h-full">
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-heading font-bold text-center mb-16 text-dark" data-i18n="testimonials.title">Témoignages de Parents</h2>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-light rounded-xl p-6">
+                    <div class="flex mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-dark/80 mb-4 italic" data-i18n="testimonials.items.0.text">"Une crèche exceptionnelle où notre fille s'épanouit chaque jour. L'équipe est à l'écoute et bienveillante."</p>
+                    <p class="text-primary font-semibold" data-i18n="testimonials.items.0.author">- Marie L.</p>
+                </div>
+
+                <div class="bg-light rounded-xl p-6">
+                    <div class="flex mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-dark/80 mb-4 italic" data-i18n="testimonials.items.1.text">"L'approche inclusive de L'Arche de Noé a changé notre vie. Notre fils se développe merveilleusement au contact des autres enfants."</p>
+                    <p class="text-primary font-semibold" data-i18n="testimonials.items.1.author">- Jean et Sophie M.</p>
+                </div>
+
+                <div class="bg-light rounded-xl p-6">
+                    <div class="flex mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-dark/80 mb-4 italic" data-i18n="testimonials.items.2.text">"Des professionnelles compétentes et attentionnées. Nous sommes rassurés et ravis !"</p>
+                    <p class="text-primary font-semibold" data-i18n="testimonials.items.2.author">- Amaia B.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-heading font-bold text-center mb-16 text-dark" data-i18n="faq.title">Questions Fréquentes</h2>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="faq-item bg-white rounded-xl overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-light/50 transition-colors">
+                        <span class="font-semibold text-dark" data-i18n="faq.items.0.q">À partir de quel âge accueillez-vous les enfants ?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0">
+                        <p class="text-dark/80" data-i18n="faq.items.0.a">Nous accueillons les enfants dès 10 semaines jusqu'à 6 ans.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-xl overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-light/50 transition-colors">
+                        <span class="font-semibold text-dark" data-i18n="faq.items.1.q">Comment fonctionnent les places prioritaires ?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0">
+                        <p class="text-dark/80" data-i18n="faq.items.1.a">1/3 de nos 26 places sont réservées aux enfants en situation de handicap ou de vulnérabilité.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-xl overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-light/50 transition-colors">
+                        <span class="font-semibold text-dark" data-i18n="faq.items.2.q">Les repas sont-ils fournis ?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0">
+                        <p class="text-dark/80" data-i18n="faq.items.2.a">Oui, nous fournissons les repas adaptés à l'âge de chaque enfant, préparés avec des produits de qualité.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-xl overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-light/50 transition-colors">
+                        <span class="font-semibold text-dark" data-i18n="faq.items.3.q">Comment se passe le partenariat avec l'école Largenté ?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0">
+                        <p class="text-dark/80" data-i18n="faq.items.3.a">Nous organisons une scolarisation progressive pour préparer en douceur l'entrée en maternelle.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-xl overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-light/50 transition-colors">
+                        <span class="font-semibold text-dark" data-i18n="faq.items.4.q">Quels sont les horaires de la crèche ?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0">
+                        <p class="text-dark/80" data-i18n="faq.items.4.a">Nous sommes ouverts du lundi au vendredi de 8h00 à 18h30.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-heading font-bold text-center mb-16 text-dark" data-i18n="contact.title">Contactez-Nous</h2>
+
+            <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-2xl font-heading font-semibold mb-6 text-primary" data-i18n="contact.info">Coordonnées</h3>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <i data-lucide="map-pin" class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-dark" data-i18n="contact.address">Adresse</p>
+                                <p class="text-dark/80" data-i18n="contact.addressValue">À compléter</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <i data-lucide="phone" class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-dark" data-i18n="contact.phone">Téléphone</p>
+                                <p class="text-dark/80" data-i18n="contact.phoneValue">À compléter</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <i data-lucide="mail" class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-dark" data-i18n="contact.email">Email</p>
+                                <p class="text-dark/80" data-i18n="contact.emailValue">À compléter</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <i data-lucide="clock" class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-dark" data-i18n="contact.hours">Horaires</p>
+                                <p class="text-dark/80" data-i18n="contact.hoursValue">Lundi-Vendredi 8h00-18h30</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map placeholder -->
+                    <div class="mt-8 bg-light rounded-xl h-64 flex items-center justify-center">
+                        <div class="text-center text-dark/50">
+                            <i data-lucide="map" class="w-12 h-12 mx-auto mb-2"></i>
+                            <p>Google Maps (à configurer)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <h3 class="text-2xl font-heading font-semibold mb-6 text-primary" data-i18n="contact.form.title">Formulaire de Contact</h3>
+
+                    <form id="contact-form" name="contact" method="POST" data-netlify="true" class="space-y-4">
+                        <input type="hidden" name="form-name" value="contact">
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="lastName" class="block text-sm font-semibold mb-2 text-dark" data-i18n="contact.form.lastName">Nom</label>
+                                <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors">
+                            </div>
+                            <div>
+                                <label for="firstName" class="block text-sm font-semibold mb-2 text-dark" data-i18n="contact.form.firstName">Prénom</label>
+                                <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-semibold mb-2 text-dark" data-i18n="contact.form.email">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors">
+                        </div>
+
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold mb-2 text-dark" data-i18n="contact.form.phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors">
+                        </div>
+
+                        <div>
+                            <label for="childAge" class="block text-sm font-semibold mb-2 text-dark" data-i18n="contact.form.childAge">Âge de l'enfant</label>
+                            <input type="text" id="childAge" name="childAge" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors">
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-semibold mb-2 text-dark" data-i18n="contact.form.message">Message</label>
+                            <textarea id="message" name="message" required rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors resize-none"></textarea>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <input type="checkbox" id="visit" name="visit" class="mt-1 w-5 h-5 text-primary rounded focus:ring-2 focus:ring-primary/20">
+                            <label for="visit" class="text-sm text-dark" data-i18n="contact.form.visit">Je souhaite demander une visite de la crèche</label>
+                        </div>
+
+                        <button type="submit" class="btn-primary w-full flex items-center justify-center space-x-2">
+                            <span data-i18n="contact.form.submit">Envoyer</span>
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                        </button>
+
+                        <div id="form-message" class="hidden p-4 rounded-lg"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-heading font-bold mb-4">L'Arche de Noé</h3>
+                    <p class="text-white/80" data-i18n="footer.address">Bayonne, France</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-white/80 hover:text-white transition-colors" data-i18n="nav.home">Accueil</a></li>
+                        <li><a href="#about" class="text-white/80 hover:text-white transition-colors" data-i18n="nav.about">La Crèche</a></li>
+                        <li><a href="#pedagogy" class="text-white/80 hover:text-white transition-colors" data-i18n="nav.pedagogy">Pédagogie</a></li>
+                        <li><a href="#contact" class="text-white/80 hover:text-white transition-colors" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Légal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors" data-i18n="footer.legal">Mentions légales</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors" data-i18n="footer.privacy">Politique de confidentialité</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors" data-i18n="footer.cookies">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 pt-8 text-center">
+                <p class="text-white/60" data-i18n="footer.copyright">© 2025 Crèche L'Arche de Noé. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center opacity-0 pointer-events-none transition-opacity hover:bg-primary/90" aria-label="Retour en haut">
+        <i data-lucide="arrow-up" class="w-6 h-6"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="/js/translations.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

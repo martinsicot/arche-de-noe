@@ -1,0 +1,15 @@
+{
+  "name": "arche-de-noe",
+  "version": "1.0.0",
+  "description": "Site web de la crèche L'Arche de Noé - Bayonne",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/input.css -o ./public/css/output.css --watch",
+    "build": "npx tailwindcss -i ./src/css/input.css -o ./public/css/output.css --minify"
+  },
+  "keywords": ["creche", "bayonne", "inclusive"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
