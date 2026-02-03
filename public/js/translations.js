@@ -115,6 +115,10 @@ const translations = {
         time: '8h00 - 18h30',
         closed: 'Fermetures annuelles : à préciser'
       },
+      parking: {
+        title: 'Stationnement',
+        text: 'Aire de stationnement devant la crèche avec 1 place prioritaire PMR'
+      },
       pricing: {
         title: 'Tarifs',
         text: 'Participation mensuelle selon le barème national CNAF',
@@ -348,6 +352,10 @@ const translations = {
         open: 'Astelehena Ostiralera',
         time: '8:00 - 18:30',
         closed: 'Urteko itxierak: zehaztu behar'
+      },
+      parking: {
+        title: 'Aparkalekua',
+        text: 'Haurtzaindegiaren aurrean aparkaleku-eremua PMR lehentasunezko leku batekin'
       },
       pricing: {
         title: 'Tarifak',
