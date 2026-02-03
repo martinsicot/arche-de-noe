@@ -902,8 +902,9 @@
                         </div>
 
                         <div class="flex items-start space-x-3">
-                            <input type="checkbox" id="visit" name="visit" class="mt-1 w-5 h-5 text-primary rounded focus:ring-2 focus:ring-primary/20">
-                            <label for="visit" class="text-sm text-dark" data-i18n="contact.form.visit">Je souhaite demander une visite de la crèche</label>
+                            <input type="checkbox" id="visit-checkbox" class="mt-1 w-5 h-5 text-primary rounded focus:ring-2 focus:ring-primary/20">
+                            <input type="hidden" id="visit" name="Demande de visite" value="Non">
+                            <label for="visit-checkbox" class="text-sm text-dark" data-i18n="contact.form.visit">Je souhaite demander une visite de la crèche</label>
                         </div>
 
                         <button type="submit" class="btn-primary w-full" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
@@ -964,6 +965,15 @@
     <script>
         // Initialize Lucide icons
         lucide.createIcons();
+
+        // Update visit hidden field based on checkbox
+        const visitCheckbox = document.getElementById('visit-checkbox');
+        const visitHidden = document.getElementById('visit');
+        if (visitCheckbox && visitHidden) {
+            visitCheckbox.addEventListener('change', function() {
+                visitHidden.value = this.checked ? 'Oui' : 'Non';
+            });
+        }
     </script>
 </body>
 </html>
