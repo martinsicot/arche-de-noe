@@ -36,8 +36,8 @@
             <div class="flex items-center justify-between h-20">
                 <!-- Logo -->
                 <div class="flex-shrink-0">
-                    <a href="#home" class="text-2xl font-heading font-bold text-primary">
-                        L'Arche de Noé
+                    <a href="#home" class="flex items-center">
+                        <img src="/images/logo.png" alt="L'Arche de Noé" class="h-12 w-auto" style="max-width: 180px;">
                     </a>
                 </div>
 
@@ -142,9 +142,11 @@
             <p class="text-lg sm:text-xl text-dark mb-12 max-w-3xl mx-auto fade-in-up" style="animation-delay: 0.4s;" data-i18n="hero.tagline">
                 Où chaque enfant grandit à son rythme, au contact des autres
             </p>
-            <a href="#contact" class="btn-primary fade-in-up inline-flex items-center space-x-2" style="animation-delay: 0.6s;">
-                <span data-i18n="hero.cta">Demander une visite</span>
-                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            <a href="#contact" class="btn-primary fade-in-up" style="animation-delay: 0.6s;">
+                <span style="display: inline-flex; align-items: center; gap: 8px; white-space: nowrap;">
+                    <span data-i18n="hero.cta">Demander une visite</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </span>
             </a>
         </div>
 
@@ -157,7 +159,7 @@
     <!-- Valeurs Section -->
     <section id="values" class="py-20 bg-light">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-heading font-bold text-center mb-16 text-dark" data-i18n="values.title">Nos Valeurs</h2>
+            <h2 class="text-4xl font-heading font-bold text-center mb-16 text-dark" data-i18n="values.title">Notre Engagement</h2>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Inclusion -->
@@ -183,8 +185,8 @@
                     <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
                         <i data-lucide="graduation-cap" class="w-8 h-8 text-accent"></i>
                     </div>
-                    <h3 class="text-xl font-heading font-semibold mb-3 text-dark" data-i18n="values.partnership.title">Partenariat école</h3>
-                    <p class="text-dark/80" data-i18n="values.partnership.text">Scolarisation progressive en lien avec l'école Largenté</p>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-dark" data-i18n="values.partnership.title">Partenariat Crèche/École</h3>
+                    <p class="text-dark/80 text-sm" data-i18n="values.partnership.text">Projets de scolarisation progressive en collaboration avec les écoles maternelles voisines, pour une transition en douceur</p>
                 </div>
 
                 <!-- Petite structure -->
@@ -206,20 +208,20 @@
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
                 <div class="text-center">
-                    <div class="text-5xl font-heading font-bold text-primary mb-2">26</div>
-                    <p class="text-lg text-dark" data-i18n="stats.places">places</p>
+                    <div class="text-4xl font-heading font-bold text-primary mb-2">26 places</div>
+                    <p class="text-lg text-dark/70" data-i18n="stats.places">Capacité d'accueil</p>
                 </div>
                 <div class="text-center">
-                    <div class="text-5xl font-heading font-bold text-secondary mb-2">10 sem.</div>
-                    <p class="text-lg text-dark" data-i18n="stats.ages">à 6 ans</p>
+                    <div class="text-4xl font-heading font-bold text-secondary mb-2">10 sem. - 6 ans</div>
+                    <p class="text-lg text-dark/70" data-i18n="stats.ages">Âges d'accueil</p>
                 </div>
                 <div class="text-center">
-                    <div class="text-5xl font-heading font-bold text-accent mb-2">8h-18h30</div>
-                    <p class="text-lg text-dark" data-i18n="stats.hours">Horaires</p>
+                    <div class="text-4xl font-heading font-bold text-accent mb-2">8h - 18h30</div>
+                    <p class="text-lg text-dark/70" data-i18n="stats.hours">Horaires d'ouverture</p>
                 </div>
                 <div class="text-center">
-                    <div class="text-5xl font-heading font-bold text-primary mb-2">Lun-Ven</div>
-                    <p class="text-lg text-dark" data-i18n="stats.days">5 jours/semaine</p>
+                    <div class="text-4xl font-heading font-bold text-primary mb-2">Lun - Ven</div>
+                    <p class="text-lg text-dark/70" data-i18n="stats.days">5 jours par semaine</p>
                 </div>
             </div>
         </div>
@@ -233,27 +235,83 @@
                 <p class="text-xl text-center text-accent mb-12" data-i18n="about.subtitle">Une approche inclusive et bienveillante</p>
 
                 <div class="bg-light rounded-2xl p-8 mb-12">
-                    <p class="text-lg text-dark leading-relaxed" data-i18n="about.text">
-                        Au sein de notre crèche, le handicap n'est pas un obstacle, mais un tremplin pour créer une dynamique positive et constructive dans l'accompagnement de tous les enfants. La crèche s'organise pour que l'accueil s'ajuste au mieux à chaque enfant et aux besoins de ses parents.
+                    <p class="text-lg text-dark leading-relaxed mb-6" data-i18n="about.text">
+                        « Accueillir l'enfant tel qu'il est, le respecter dans ses différences, lui offrir les moyens de s'épanouir et de découvrir ses compétences dans la rencontre avec les autres, sans nier les difficultés rencontrées, tel est le travail d'accompagnement de l'équipe professionnelle. »
+                    </p>
+                    <p class="text-dark/80 leading-relaxed" data-i18n="about.text2">
+                        Cette crèche pas tout à fait ordinaire, permet d'ouvrir le regard sur la différence et le faire évoluer vers la tolérance, le respect de l'autre et l'enrichissement mutuel.
                     </p>
                 </div>
 
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-secondary/10 rounded-xl p-6">
-                        <div class="flex items-center mb-4">
-                            <i data-lucide="users" class="w-8 h-8 text-secondary mr-3"></i>
-                            <h3 class="text-2xl font-heading font-semibold text-dark" data-i18n="about.team.title">Notre Équipe</h3>
-                        </div>
-                        <p class="text-dark/80" data-i18n="about.team.text">Une équipe qualifiée et passionnée, dévouée au bien-être de vos enfants</p>
+                <!-- ARCHE DE NOE Acronym -->
+                <div class="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 mb-12">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-heading font-semibold text-dark mb-2" data-i18n="about.values.title">Nos Valeurs</h3>
+                        <p class="text-dark/60 text-sm italic">Chaque lettre de notre nom porte une valeur</p>
                     </div>
 
-                    <div class="bg-primary/10 rounded-xl p-6">
-                        <div class="flex items-center mb-4">
-                            <i data-lucide="building" class="w-8 h-8 text-primary mr-3"></i>
-                            <h3 class="text-2xl font-heading font-semibold text-dark" data-i18n="about.spaces.title">Nos Locaux</h3>
+                    <!-- 3 colonnes: ARCHE | DE | NOE -->
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <!-- Colonne ARCHE -->
+                        <div class="bg-white/60 rounded-xl p-6">
+                            <h4 class="text-4xl font-heading font-bold text-center mb-6 tracking-wider">
+                                <span class="text-primary">A</span><span class="text-secondary">R</span><span class="text-accent">C</span><span class="text-primary">H</span><span class="text-secondary">E</span>
+                            </h4>
+                            <div class="space-y-3">
+                                <p class="text-dark/80"><span class="text-xl font-bold text-primary">A</span><strong>ccueil</strong> précoce</p>
+                                <p class="text-dark/80"><span class="text-xl font-bold text-secondary">R</span><strong>espect</strong> du rythme</p>
+                                <p class="text-dark/80"><span class="text-xl font-bold text-accent">C</span><strong>ommunication</strong></p>
+                                <p class="text-dark/80"><span class="text-xl font-bold text-primary">H</span><strong>orizons</strong> nouveaux</p>
+                                <p class="text-dark/80"><span class="text-xl font-bold text-secondary">E</span><strong>coute</strong></p>
+                            </div>
                         </div>
-                        <p class="text-dark/80" data-i18n="about.spaces.text">Des espaces adaptés, chaleureux et sécurisés pour l'épanouissement de chaque enfant</p>
+
+                        <!-- Colonne DE -->
+                        <div class="bg-white/60 rounded-xl p-6">
+                            <h4 class="text-4xl font-heading font-bold text-center mb-6 tracking-wider">
+                                <span class="text-accent">D</span><span class="text-primary">E</span>
+                            </h4>
+                            <div class="space-y-3">
+                                <p class="text-dark/80"><span class="text-xl font-bold text-accent">D</span><strong>écouverte</strong> d'autrui</p>
+                                <p class="text-dark/80"><span class="text-xl font-bold text-primary">E</span><strong>nrichissement</strong></p>
+                            </div>
+                        </div>
+
+                        <!-- Colonne NOE -->
+                        <div class="bg-white/60 rounded-xl p-6">
+                            <h4 class="text-4xl font-heading font-bold text-center mb-6 tracking-wider">
+                                <span class="text-secondary">N</span><span class="text-accent">O</span><span class="text-primary">E</span>
+                            </h4>
+                            <div class="space-y-3">
+                                <p class="text-dark/80"><span class="text-xl font-bold text-secondary">N</span><strong>écessité</strong> parentale</p>
+                                <p class="text-dark/80"><span class="text-xl font-bold text-accent">O</span><strong>uverture</strong></p>
+                                <p class="text-dark/80"><span class="text-xl font-bold text-primary">E</span><strong>xpériences</strong></p>
+                            </div>
+                        </div>
                     </div>
+                </div>
+
+                <!-- Notre Histoire -->
+                <div class="bg-primary/10 rounded-xl p-6 mb-12">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="history" class="w-8 h-8 text-primary mr-3"></i>
+                        <h3 class="text-2xl font-heading font-semibold text-dark" data-i18n="about.history.title">Notre Histoire</h3>
+                    </div>
+                    <p class="text-dark/80 text-sm mb-3">
+                        En 1992, la rencontre de trois personnes, avec le soutien de l'Association Chrysalide, a permis l'élaboration d'un projet innovant pour l'accueil d'enfants de moins de 6 ans en favorisant l'accueil précoce des jeunes enfants en situation de handicap.
+                    </p>
+                    <p class="text-dark/80 text-sm">
+                        <strong>Ouverture le 14 Mars 1994</strong> (halte-garderie de 15 places). Agrément de 26 places depuis septembre 2011.
+                    </p>
+                </div>
+
+                <!-- Reconnaissance -->
+                <div class="bg-accent/10 rounded-xl p-6 text-center">
+                    <div class="flex items-center justify-center mb-3">
+                        <i data-lucide="award" class="w-8 h-8 text-accent mr-3"></i>
+                        <h3 class="text-xl font-heading font-semibold text-dark">Reconnue projet pilote national</h3>
+                    </div>
+                    <p class="text-dark/80">Notre crèche a été reconnue par la CNAF comme projet pilote au niveau national pour son approche inclusive.</p>
                 </div>
             </div>
         </div>
@@ -304,43 +362,67 @@
                     </div>
                 </div>
 
-                <!-- Activités -->
+                <!-- Ateliers -->
                 <div class="bg-accent/10 rounded-2xl p-8">
-                    <h3 class="text-2xl font-heading font-semibold mb-6 text-dark" data-i18n="pedagogy.activities.title">Nos Activités</h3>
-                    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-                        <div class="flex items-center space-x-3">
-                            <i data-lucide="music" class="w-5 h-5 text-accent"></i>
-                            <span class="text-dark" data-i18n="pedagogy.activities.list.0">Éveil musical</span>
+                    <h3 class="text-2xl font-heading font-semibold mb-8 text-dark" data-i18n="pedagogy.activities.title">Nos Ateliers</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Atelier Motricité -->
+                        <div class="bg-white rounded-xl p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="activity" class="w-5 h-5 text-primary"></i>
+                                </div>
+                                <h4 class="font-semibold text-dark text-lg">Atelier de motricité</h4>
+                            </div>
+                            <p class="text-dark/80">Projet autour de la motricité du jeune enfant, avec une psychomotricienne intervenant chaque semaine.</p>
                         </div>
-                        <div class="flex items-center space-x-3">
-                            <i data-lucide="activity" class="w-5 h-5 text-accent"></i>
-                            <span class="text-dark" data-i18n="pedagogy.activities.list.1">Motricité</span>
+                        <!-- Atelier Libre Plume -->
+                        <div class="bg-white rounded-xl p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-10 h-10 bg-secondary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="book-open" class="w-5 h-5 text-secondary"></i>
+                                </div>
+                                <h4 class="font-semibold text-dark text-lg">Atelier Libre Plume</h4>
+                            </div>
+                            <p class="text-dark/80">Projet de lecture pour tous les enfants, ouvrant sur la culture chaque semaine au sein de la crèche.</p>
                         </div>
-                        <div class="flex items-center space-x-3">
-                            <i data-lucide="hand" class="w-5 h-5 text-accent"></i>
-                            <span class="text-dark" data-i18n="pedagogy.activities.list.2">Activités sensorielles</span>
+                        <!-- Atelier Jardinage -->
+                        <div class="bg-white rounded-xl p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="leaf" class="w-5 h-5 text-accent"></i>
+                                </div>
+                                <h4 class="font-semibold text-dark text-lg">Atelier Jardinage</h4>
+                            </div>
+                            <p class="text-dark/80">Ateliers d'éveil et sensibilisation à la nature, aux animaux et insectes. Bricolage avec des éléments naturels.</p>
                         </div>
-                        <div class="flex items-center space-x-3">
-                            <i data-lucide="book-open" class="w-5 h-5 text-accent"></i>
-                            <span class="text-dark" data-i18n="pedagogy.activities.list.3">Lecture et contes</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <i data-lucide="palette" class="w-5 h-5 text-accent"></i>
-                            <span class="text-dark" data-i18n="pedagogy.activities.list.4">Arts plastiques</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <i data-lucide="droplet" class="w-5 h-5 text-accent"></i>
-                            <span class="text-dark" data-i18n="pedagogy.activities.list.5">Jeux d'eau et de sable</span>
+                        <!-- Atelier Ludothèque -->
+                        <div class="bg-white rounded-xl p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="puzzle" class="w-5 h-5 text-primary"></i>
+                                </div>
+                                <h4 class="font-semibold text-dark text-lg">Atelier Ludothèque</h4>
+                            </div>
+                            <p class="text-dark/80">Jeux de coopération et de sociétés tous les 15 jours avec le Centre de Loisirs Elgarrekin.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Scolarisation -->
                 <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <h3 class="text-2xl font-heading font-semibold mb-4 text-secondary" data-i18n="pedagogy.school.title">Scolarisation Progressive</h3>
-                    <p class="text-lg text-dark/80 leading-relaxed" data-i18n="pedagogy.school.text">
-                        En partenariat avec l'école maternelle Largenté, nous accompagnons les enfants vers une scolarisation douce et progressive.
-                    </p>
+                    <h3 class="text-2xl font-heading font-semibold mb-4 text-secondary" data-i18n="pedagogy.school.title">Partenariat Crèche/École</h3>
+                    <div class="space-y-4 text-dark/80 leading-relaxed">
+                        <p data-i18n="pedagogy.school.text1">
+                            Du fait de la mitoyenneté avec une école maternelle, et en fonction de la demande éventuelle de familles, nous collaborons à des projets individuels de scolarisation progressive.
+                        </p>
+                        <p data-i18n="pedagogy.school.text2">
+                            Nous travaillons ce partenariat avec d'autres écoles, certes moins proches géographiquement, mais avec lesquelles l'équipe s'implique tout autant.
+                        </p>
+                        <p data-i18n="pedagogy.school.text3">
+                            Dans le cadre de ces projets passerelles, afin de favoriser une scolarisation en douceur, plusieurs enfants fréquentent la crèche à différents moments de la journée en complément de l'école et/ou des prises en charge thérapeutiques.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -408,6 +490,21 @@
                     </div>
 
                     <p class="text-sm text-dark/70 mt-4" data-i18n="practical.pricing.info">Calcul basé sur vos ressources et la composition familiale</p>
+
+                    <div class="mt-6 flex flex-wrap gap-4 justify-center">
+                        <div class="flex items-center space-x-2 bg-white px-4 py-2 rounded-full">
+                            <i data-lucide="utensils" class="w-5 h-5 text-accent"></i>
+                            <span class="text-sm text-dark">Repas fournis</span>
+                        </div>
+                        <div class="flex items-center space-x-2 bg-white px-4 py-2 rounded-full">
+                            <i data-lucide="cookie" class="w-5 h-5 text-accent"></i>
+                            <span class="text-sm text-dark">Goûters fournis</span>
+                        </div>
+                        <div class="flex items-center space-x-2 bg-white px-4 py-2 rounded-full">
+                            <i data-lucide="baby" class="w-5 h-5 text-accent"></i>
+                            <span class="text-sm text-dark">Couches fournies</span>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Inscription -->
@@ -433,8 +530,117 @@
         </div>
     </section>
 
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-center mb-12">
+                <i data-lucide="users" class="w-8 h-8 text-secondary mr-3"></i>
+                <h2 class="text-4xl font-heading font-bold text-dark" data-i18n="team.title">Notre Équipe</h2>
+            </div>
+
+            <div class="max-w-5xl mx-auto">
+                <!-- Grille de l'équipe -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 16px;">
+                    <!-- Direction -->
+                    <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                        <div class="w-14 h-14 bg-secondary/20 rounded-full mx-auto mb-3 flex items-center justify-center">
+                            <i data-lucide="user" class="w-7 h-7 text-secondary"></i>
+                        </div>
+                        <p class="font-semibold text-dark">Prénom</p>
+                        <p class="text-sm text-dark/60">Directrice (EJE)</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                        <div class="w-14 h-14 bg-secondary/20 rounded-full mx-auto mb-3 flex items-center justify-center">
+                            <i data-lucide="user" class="w-7 h-7 text-secondary"></i>
+                        </div>
+                        <p class="font-semibold text-dark">Prénom</p>
+                        <p class="text-sm text-dark/60">Dir. adjoint (EJE)</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                        <div class="w-14 h-14 bg-secondary/20 rounded-full mx-auto mb-3 flex items-center justify-center">
+                            <i data-lucide="user" class="w-7 h-7 text-secondary"></i>
+                        </div>
+                        <p class="font-semibold text-dark">Prénom</p>
+                        <p class="text-sm text-dark/60">Dir. adjoint (Éduc. spé.)</p>
+                    </div>
+
+                    <!-- Infirmières -->
+                    <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                        <div class="w-14 h-14 bg-primary/20 rounded-full mx-auto mb-3 flex items-center justify-center">
+                            <i data-lucide="stethoscope" class="w-7 h-7 text-primary"></i>
+                        </div>
+                        <p class="font-semibold text-dark">Prénom</p>
+                        <p class="text-sm text-dark/60">Infirmière</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                        <div class="w-14 h-14 bg-primary/20 rounded-full mx-auto mb-3 flex items-center justify-center">
+                            <i data-lucide="stethoscope" class="w-7 h-7 text-primary"></i>
+                        </div>
+                        <p class="font-semibold text-dark">Prénom</p>
+                        <p class="text-sm text-dark/60">Infirmière</p>
+                    </div>
+
+                    <!-- Éducatrices -->
+                    <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                        <div class="w-14 h-14 bg-accent/20 rounded-full mx-auto mb-3 flex items-center justify-center">
+                            <i data-lucide="user" class="w-7 h-7 text-accent"></i>
+                        </div>
+                        <p class="font-semibold text-dark">Prénom</p>
+                        <p class="text-sm text-dark/60">EJE</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                        <div class="w-14 h-14 bg-accent/20 rounded-full mx-auto mb-3 flex items-center justify-center">
+                            <i data-lucide="user" class="w-7 h-7 text-accent"></i>
+                        </div>
+                        <p class="font-semibold text-dark">Prénom</p>
+                        <p class="text-sm text-dark/60">Éduc. spécialisée</p>
+                    </div>
+
+                    <!-- Auxiliaires -->
+                    <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                        <div class="w-14 h-14 bg-secondary/10 rounded-full mx-auto mb-3 flex items-center justify-center">
+                            <i data-lucide="user" class="w-7 h-7 text-secondary/70"></i>
+                        </div>
+                        <p class="font-semibold text-dark">Prénom</p>
+                        <p class="text-sm text-dark/60">Aux. puériculture</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                        <div class="w-14 h-14 bg-secondary/10 rounded-full mx-auto mb-3 flex items-center justify-center">
+                            <i data-lucide="user" class="w-7 h-7 text-secondary/70"></i>
+                        </div>
+                        <p class="font-semibold text-dark">Prénom</p>
+                        <p class="text-sm text-dark/60">Aux. puériculture</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                        <div class="w-14 h-14 bg-secondary/10 rounded-full mx-auto mb-3 flex items-center justify-center">
+                            <i data-lucide="user" class="w-7 h-7 text-secondary/70"></i>
+                        </div>
+                        <p class="font-semibold text-dark">Prénom</p>
+                        <p class="text-sm text-dark/60">Aux. puériculture</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                        <div class="w-14 h-14 bg-secondary/10 rounded-full mx-auto mb-3 flex items-center justify-center">
+                            <i data-lucide="user" class="w-7 h-7 text-secondary/70"></i>
+                        </div>
+                        <p class="font-semibold text-dark">Prénom</p>
+                        <p class="text-sm text-dark/60">Aux. puériculture</p>
+                    </div>
+
+                    <!-- Intervenants -->
+                    <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                        <div class="w-14 h-14 bg-primary/10 rounded-full mx-auto mb-3 flex items-center justify-center">
+                            <i data-lucide="brain" class="w-7 h-7 text-primary/70"></i>
+                        </div>
+                        <p class="font-semibold text-dark">Prénom</p>
+                        <p class="text-sm text-dark/60">Psychologue</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Gallery Section -->
-    <section id="gallery" class="py-20 bg-light">
+    <section id="gallery" class="py-20 bg-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl font-heading font-bold text-center mb-12 text-dark" data-i18n="gallery.title">Galerie Photos</h2>
 
@@ -560,11 +766,11 @@
 
                 <div class="faq-item bg-white rounded-xl overflow-hidden">
                     <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-light/50 transition-colors">
-                        <span class="font-semibold text-dark" data-i18n="faq.items.3.q">Comment se passe le partenariat avec l'école Largenté ?</span>
+                        <span class="font-semibold text-dark" data-i18n="faq.items.3.q">Comment fonctionne le partenariat avec les écoles ?</span>
                         <i data-lucide="chevron-down" class="w-5 h-5 text-primary transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden p-6 pt-0">
-                        <p class="text-dark/80" data-i18n="faq.items.3.a">Nous organisons une scolarisation progressive pour préparer en douceur l'entrée en maternelle.</p>
+                        <p class="text-dark/80" data-i18n="faq.items.3.a">Du fait de notre mitoyenneté avec une école maternelle, nous collaborons à des projets individuels de scolarisation progressive selon la demande des familles. Nous travaillons également ce partenariat avec d'autres écoles. Dans le cadre de ces projets passerelles, plusieurs enfants fréquentent la crèche à différents moments de la journée en complément de l'école et/ou des prises en charge thérapeutiques, favorisant ainsi une scolarisation en douceur.</p>
                     </div>
                 </div>
 
@@ -596,7 +802,7 @@
                             <i data-lucide="map-pin" class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
                             <div>
                                 <p class="font-semibold text-dark" data-i18n="contact.address">Adresse</p>
-                                <p class="text-dark/80" data-i18n="contact.addressValue">À compléter</p>
+                                <p class="text-dark/80">4, avenue Vital Biraben<br>64100 BAYONNE</p>
                             </div>
                         </div>
 
@@ -604,7 +810,10 @@
                             <i data-lucide="phone" class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
                             <div>
                                 <p class="font-semibold text-dark" data-i18n="contact.phone">Téléphone</p>
-                                <p class="text-dark/80" data-i18n="contact.phoneValue">À compléter</p>
+                                <p class="text-dark/80">
+                                    <a href="tel:0559311591" class="hover:text-primary transition-colors">05 59 31 15 91</a><br>
+                                    <a href="tel:0630243182" class="hover:text-primary transition-colors">06 30 24 31 82</a>
+                                </p>
                             </div>
                         </div>
 
@@ -612,7 +821,9 @@
                             <i data-lucide="mail" class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
                             <div>
                                 <p class="font-semibold text-dark" data-i18n="contact.email">Email</p>
-                                <p class="text-dark/80" data-i18n="contact.emailValue">À compléter</p>
+                                <p class="text-dark/80">
+                                    <a href="mailto:direction@larchedenoe64.fr" class="hover:text-primary transition-colors">direction@larchedenoe64.fr</a>
+                                </p>
                             </div>
                         </div>
 
@@ -625,12 +836,18 @@
                         </div>
                     </div>
 
-                    <!-- Map placeholder -->
-                    <div class="mt-8 bg-light rounded-xl h-64 flex items-center justify-center">
-                        <div class="text-center text-dark/50">
-                            <i data-lucide="map" class="w-12 h-12 mx-auto mb-2"></i>
-                            <p>Google Maps (à configurer)</p>
-                        </div>
+                    <!-- Google Maps -->
+                    <div class="mt-8 rounded-xl overflow-hidden h-64">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.8967!2d-1.4752!3d43.4833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51408a5e5c4b23%3A0x0!2s4%20Avenue%20Vital%20Biraben%2C%2064100%20Bayonne!5e0!3m2!1sfr!2sfr!4v1234567890"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Localisation de la crèche L'Arche de Noé">
+                        </iframe>
                     </div>
                 </div>
 
@@ -694,8 +911,8 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <div>
-                    <h3 class="text-2xl font-heading font-bold mb-4">L'Arche de Noé</h3>
-                    <p class="text-white/80" data-i18n="footer.address">Bayonne, France</p>
+                    <img src="/images/logo.png" alt="L'Arche de Noé" class="h-10 w-auto mb-4 brightness-0 invert" style="max-width: 150px;">
+                    <p class="text-white/80">4, avenue Vital Biraben<br>64100 BAYONNE</p>
                 </div>
 
                 <div>

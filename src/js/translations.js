@@ -21,9 +21,9 @@ const translations = {
       cta: 'Demander une visite'
     },
 
-    // Valeurs
+    // Engagement
     values: {
-      title: 'Nos Valeurs',
+      title: 'Notre Engagement',
       inclusion: {
         title: 'Inclusion',
         text: '1/3 de nos places sont dédiées aux enfants en situation de handicap'
@@ -33,8 +33,8 @@ const translations = {
         text: 'Chaque enfant est unique, notre accueil s\'adapte à ses besoins'
       },
       partnership: {
-        title: 'Partenariat école',
-        text: 'Scolarisation progressive en lien avec l\'école Largenté'
+        title: 'Partenariat Crèche/École',
+        text: 'Projets de scolarisation progressive en collaboration avec les écoles maternelles voisines, pour une transition en douceur'
       },
       smallStructure: {
         title: 'Petite structure',
@@ -45,20 +45,27 @@ const translations = {
     // Chiffres clés
     stats: {
       title: 'En Chiffres',
-      places: '26 places',
-      ages: '10 semaines à 6 ans',
-      hours: '8h00 - 18h30',
-      days: 'Lundi - Vendredi'
+      places: 'Capacité d\'accueil',
+      ages: 'Âges d\'accueil',
+      hours: 'Horaires d\'ouverture',
+      days: '5 jours par semaine'
     },
 
     // Présentation
     about: {
       title: 'Notre Crèche',
       subtitle: 'Une approche inclusive et bienveillante',
-      text: 'Au sein de notre crèche, le handicap n\'est pas un obstacle, mais un tremplin pour créer une dynamique positive et constructive dans l\'accompagnement de tous les enfants. La crèche s\'organise pour que l\'accueil s\'ajuste au mieux à chaque enfant et aux besoins de ses parents.',
+      text: '« Accueillir l\'enfant tel qu\'il est, le respecter dans ses différences, lui offrir les moyens de s\'épanouir et de découvrir ses compétences dans la rencontre avec les autres, sans nier les difficultés rencontrées, tel est le travail d\'accompagnement de l\'équipe professionnelle. »',
+      text2: 'Cette crèche pas tout à fait ordinaire, permet d\'ouvrir le regard sur la différence et le faire évoluer vers la tolérance, le respect de l\'autre et l\'enrichissement mutuel.',
+      values: {
+        title: 'Nos Valeurs'
+      },
       team: {
         title: 'Notre Équipe',
         text: 'Une équipe qualifiée et passionnée, dévouée au bien-être de vos enfants'
+      },
+      history: {
+        title: 'Notre Histoire'
       },
       spaces: {
         title: 'Nos Locaux',
@@ -85,20 +92,13 @@ const translations = {
         activities2: '15h30-18h30 : Activités / Départ échelonné'
       },
       activities: {
-        title: 'Nos Activités',
-        list: [
-          'Éveil musical',
-          'Motricité',
-          'Activités sensorielles',
-          'Lecture et contes',
-          'Arts plastiques',
-          'Jeux d\'eau et de sable',
-          'Sorties extérieures'
-        ]
+        title: 'Nos Ateliers'
       },
       school: {
-        title: 'Scolarisation Progressive',
-        text: 'En partenariat avec l\'école maternelle Largenté, nous accompagnons les enfants vers une scolarisation douce et progressive.'
+        title: 'Partenariat Crèche/École',
+        text1: 'Du fait de la mitoyenneté avec une école maternelle, et en fonction de la demande éventuelle de familles, nous collaborons à des projets individuels de scolarisation progressive.',
+        text2: 'Nous travaillons ce partenariat avec d\'autres écoles, certes moins proches géographiquement, mais avec lesquelles l\'équipe s\'implique tout autant.',
+        text3: 'Dans le cadre de ces projets passerelles, afin de favoriser une scolarisation en douceur, plusieurs enfants fréquentent la crèche à différents moments de la journée en complément de l\'école et/ou des prises en charge thérapeutiques.'
       }
     },
 
@@ -186,8 +186,8 @@ const translations = {
           a: 'Oui, nous fournissons les repas adaptés à l\'âge de chaque enfant, préparés avec des produits de qualité.'
         },
         {
-          q: 'Comment se passe le partenariat avec l\'école Largenté ?',
-          a: 'Nous organisons une scolarisation progressive pour préparer en douceur l\'entrée en maternelle.'
+          q: 'Comment fonctionne le partenariat avec les écoles ?',
+          a: 'Du fait de notre mitoyenneté avec une école maternelle, nous collaborons à des projets individuels de scolarisation progressive selon la demande des familles. Nous travaillons également ce partenariat avec d\'autres écoles. Dans le cadre de ces projets passerelles, plusieurs enfants fréquentent la crèche à différents moments de la journée en complément de l\'école et/ou des prises en charge thérapeutiques, favorisant ainsi une scolarisation en douceur.'
         },
         {
           q: 'Quels sont les horaires de la crèche ?',
@@ -255,9 +255,9 @@ const translations = {
       cta: 'Bisita bat eskatu'
     },
 
-    // Valeurs
+    // Engagement
     values: {
-      title: 'Gure Balioak',
+      title: 'Gure Konpromisoa',
       inclusion: {
         title: 'Inklusioa',
         text: 'Gure lekuen heren bat desgaitasun egoeran dauden haurrentzat gorde dira'
@@ -267,8 +267,8 @@ const translations = {
         text: 'Haur bakoitza bakarra da, gure harrera bere beharretara egokitzen da'
       },
       partnership: {
-        title: 'Eskola elkarlana',
-        text: 'Eskolaratze progressiboa Largenté eskolarekin lotuta'
+        title: 'Haurtzaindegia/Eskola Elkarlana',
+        text: 'Eskolaratze progresiboko proiektuak inguruko haur-eskolekin lankidetzan, trantsizioa leuntzeko'
       },
       smallStructure: {
         title: 'Egitura txikia',
@@ -279,20 +279,27 @@ const translations = {
     // Chiffres clés
     stats: {
       title: 'Zenbakitan',
-      places: '26 leku',
-      ages: '10 astetik 6 urtera',
-      hours: '8:00 - 18:30',
-      days: 'Astelehena - Ostirala'
+      places: 'Harrera ahalmena',
+      ages: 'Harrera adinak',
+      hours: 'Irekitze ordutegiak',
+      days: 'Astean 5 egun'
     },
 
     // Présentation
     about: {
       title: 'Gure Haurtzaindegia',
       subtitle: 'Ikuspegi inklusibo eta zintzoa',
-      text: 'Gure haurtzaindegian, desgaitasuna ez da oztoporik, baizik eta tramplina bat dinamika positibo eta eraikitzaile bat sortzeko haur guztien laguntzarako. Haurtzaindegia antolatzen da harrera haur bakoitzari eta bere gurasoen beharrei ahalik eta gehien egokitzeko.',
+      text: '« Haurra den bezala hartu, bere desberdintasunetan errespetatu, besteekiko harremanean bere gaitasunak garatzeko bitartekoak eman, aurkitutako zailtasunak ukatu gabe, hori da talde profesionalaren laguntza-lana. »',
+      text2: 'Haurtzaindegi ez guztiz arrunt honek desberdintasunaren gaineko begirada irekitzen uzten du eta tolerantziara, bestearen errespetura eta elkarrekiko aberastera eboluzionarazten.',
+      values: {
+        title: 'Gure Balioak'
+      },
       team: {
         title: 'Gure Taldea',
         text: 'Talde kualifikatu eta liluragarri bat, zure haurrentzat eskainitakoa'
+      },
+      history: {
+        title: 'Gure Historia'
       },
       spaces: {
         title: 'Gure Lokalak',
@@ -319,20 +326,13 @@ const translations = {
         activities2: '15:30-18:30 : Jarduerak / Irteera eskalatua'
       },
       activities: {
-        title: 'Gure Jarduerak',
-        list: [
-          'Iratzarpen musikala',
-          'Motrizitatea',
-          'Jarduera sentsoriak',
-          'Irakurketa eta ipuinak',
-          'Arte plastikoak',
-          'Ur eta harea jokoak',
-          'Kanpora irteerak'
-        ]
+        title: 'Gure Tailerrak'
       },
       school: {
-        title: 'Eskolaratze Progressiboa',
-        text: 'Largenté haur-eskola elkartean, haurrei eskolaratze leun eta progressibo bat laguntzen diegu.'
+        title: 'Haurtzaindegia/Eskola Elkarlana',
+        text1: 'Haur-eskola baten ondoan kokatuta gauden heinean, eta familien eskaera posibleen arabera, eskolaratze progresiboko proiektu indibidualetan lankidetzan aritzen gara.',
+        text2: 'Elkarlana beste eskola batzuekin ere egiten dugu, nahiz eta geografikoki urrunago egon, taldea berdin inplikatzen da.',
+        text3: 'Pasabide proiektu hauen barruan, eskolaratze leun bat bultzatzeko, haur batzuk eguneko momentu ezberdinetan haurtzaindegira joaten dira eskolaren eta/edo laguntza terapeutikoen osagarri gisa.'
       }
     },
 
@@ -420,8 +420,8 @@ const translations = {
           a: 'Bai, haur bakoitzaren adinera egokitutako otorduak ematen ditugu, kalitate produktuekin prestatuak.'
         },
         {
-          q: 'Nola pasatzen da Largenté eskola elkarlana?',
-          a: 'Eskolaratze progressibo bat antolatzen dugu haur-eskolara sarrera leuna prestatzeko.'
+          q: 'Nola funtzionatzen du eskolekin elkarlanak?',
+          a: 'Haur-eskola batekin mugakide garenez, eskolaratze progresiboko proiektu indibidualetan lankidetzan aritzen gara familien eskaeraren arabera. Elkarkidetza hau beste eskola batzuekin ere lantzen dugu. Pasabide proiektu hauen esparruan, hainbat haurrek haurtzaindegia eguneko une desberdinetan maiztasunez bisitzen dute, eskolaren eta/edo laguntza terapeutikoen osagarri, eskolaratze leuna erraztuz.'
         },
         {
           q: 'Zeintzuk dira haurtzaindegiaren ordutegiak?',
