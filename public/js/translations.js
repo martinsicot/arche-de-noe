@@ -26,7 +26,7 @@ const translations = {
       title: 'Notre Engagement',
       inclusion: {
         title: 'Inclusion',
-        text: '1/3 de nos places sont dédiées aux enfants en situation de handicap'
+        text: '1/3 de nos places sont dédiées aux enfants en situation de vulnérabilité'
       },
       personalized: {
         title: 'Accompagnement personnalisé',
@@ -84,7 +84,6 @@ const translations = {
         title: 'Une Journée Type',
         morning: '8h00-9h00 : Accueil échelonné',
         activities1: '9h00-10h30 : Activités d\'éveil',
-        snack: '10h30-11h00 : Collation',
         outdoor: '11h00-11h45 : Jeux libres / Extérieur',
         lunch: '11h45-12h45 : Repas',
         nap: '12h45-15h00 : Sieste / Temps calme',
@@ -183,7 +182,7 @@ const translations = {
         },
         {
           q: 'Comment fonctionnent les places prioritaires ?',
-          a: '1/3 de nos 26 places sont réservées aux enfants en situation de handicap ou de vulnérabilité.'
+          a: '1/3 de nos 26 places sont réservées aux enfants en situation de vulnérabilité.'
         },
         {
           q: 'Les repas sont-ils fournis ?',
@@ -322,7 +321,6 @@ const translations = {
         title: 'Egun Mota Bat',
         morning: '8:00-9:00 : Harrera eskalatua',
         activities1: '9:00-10:30 : Iratzarpen jarduerak',
-        snack: '10:30-11:00 : Hamaiketakoa',
         outdoor: '11:00-11:45 : Joko libreak / Kanpora',
         lunch: '11:45-12:45 : Bazkaria',
         nap: '12:45-15:00 : Lo-ordua / Denbora lasaia',

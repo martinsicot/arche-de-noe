@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://votredomaine.com/sitemap.xml
+Sitemap: https://larchedenoe64.fr/sitemap.xml
