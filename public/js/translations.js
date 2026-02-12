@@ -46,7 +46,7 @@ const translations = {
     stats: {
       title: 'En Chiffres',
       places: 'Capacité d\'accueil',
-      ages: 'Âges d\'accueil',
+      ages: 'Âges d\accueil',
       hours: 'Horaires d\'ouverture',
       days: '5 jours par semaine'
     },
@@ -127,10 +127,23 @@ const translations = {
       },
       enrollment: {
         title: 'Inscription',
-        step1: '1. Contacter la directrice pour une visite',
-        step2: '2. Constitution du dossier',
-        step3: '3. Validation de l\'inscription',
-        cta: 'Demander une inscription'
+        vulnerable: {
+          title: 'Enfants en situation de vulnérabilité',
+          text: 'Inscription directe auprès de notre crèche. Contactez-nous pour organiser une visite et constituer votre dossier.',
+          cta: 'Nous contacter directement'
+        },
+        standard: {
+          title: 'Autres demandes',
+          text: 'Les inscriptions se font via le Relais Petite Enfance (RPE) de Bayonne, qui centralise les demandes et vous accompagne dans vos démarches.',
+          cta: 'Accéder au RPE'
+        },
+        steps: {
+          title: 'Étapes de l\'inscription'
+        },
+        step1: 'Contacter la directrice pour une visite',
+        step2: 'Constitution du dossier',
+        step3: 'Validation de l\'inscription',
+        bayonne: 'Voir notre page sur Bayonne.fr'
       }
     },
 
@@ -233,6 +246,12 @@ const translations = {
       privacy: 'Politique de confidentialité',
       cookies: 'Cookies',
       copyright: '© 2025 Crèche L\'Arche de Noé. Tous droits réservés.'
+    },
+
+    // Partners
+    partners: {
+      title: 'Nos Partenaires',
+      subtitle: 'Ils nous soutiennent dans notre mission'
     }
   },
 
@@ -364,10 +383,23 @@ const translations = {
       },
       enrollment: {
         title: 'Inskripzioa',
-        step1: '1. Zuzendariari deitu bisita baterako',
-        step2: '2. Karpetaren osatzea',
-        step3: '3. Inskripzioaren balioztapena',
-        cta: 'Inskripzioa eskatu'
+        vulnerable: {
+          title: 'Zaurgarritasun egoeran dauden haurrak',
+          text: 'Inskripzio zuzena gure haurtzaindegian. Jar zaitez gurekin harremanetan bisita bat antolatzeko eta zure karpeta osatzeko.',
+          cta: 'Zuzenean harremanetan jarri'
+        },
+        standard: {
+          title: 'Beste eskaerak',
+          text: 'Inskripzioak Baionako Haur Txikien Erreleboa (RPE) bidez egiten dira, eskaerak zentralizatzen ditu eta zure tramiteetan laguntzen dizu.',
+          cta: 'RPEra sartu'
+        },
+        steps: {
+          title: 'Inskripzio urratsak'
+        },
+        step1: 'Zuzendariari deitu bisita baterako',
+        step2: 'Karpetaren osatzea',
+        step3: 'Inskripzioaren balioztapena',
+        bayonne: 'Gure orria Bayonne.fr-n ikusi'
       }
     },
 
@@ -470,6 +502,12 @@ const translations = {
       privacy: 'Pribatutasun politika',
       cookies: 'Cookies',
       copyright: '© 2025 Noeren Ontzia Haurtzaindegia. Eskubide guztiak gordeta.'
+    },
+
+    // Partners
+    partners: {
+      title: 'Gure Bazkideak',
+      subtitle: 'Gure misioan sostengatzen gaituzte'
     }
   }
 };

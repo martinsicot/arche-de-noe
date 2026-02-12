@@ -294,11 +294,11 @@
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
                 <div class="text-center">
-                    <div class="text-4xl font-heading font-bold text-primary mb-2">26 places</div>
+                    <div class="text-4xl font-heading font-bold text-primary mb-2">26 places disponibles</div>
                     <p class="text-lg text-dark/70" data-i18n="stats.places">Capacité d'accueil</p>
                 </div>
                 <div class="text-center">
-                    <div class="text-4xl font-heading font-bold text-secondary mb-2">10 sem. - 6 ans</div>
+                    <div class="text-4xl font-heading font-bold text-secondary mb-2">de 10 sem. à 6 ans</div>
                     <p class="text-lg text-dark/70" data-i18n="stats.ages">Âges d'accueil</p>
                 </div>
                 <div class="text-center">
@@ -324,7 +324,8 @@
                     <p class="text-lg text-dark leading-relaxed mb-6" data-i18n="about.text">
                         « Accueillir l'enfant tel qu'il est, le respecter dans ses différences, lui offrir les moyens de s'épanouir et de découvrir ses compétences dans la rencontre avec les autres, sans nier les difficultés rencontrées, tel est le travail d'accompagnement de l'équipe professionnelle. »
                     </p>
-                    <p class="text-dark/80 leading-relaxed" data-i18n="about.text2">
+                    <p class="text-lg text-dark leading-relaxed mb-6" data-i18n="about.text2">
+
                         Cette crèche pas tout à fait ordinaire, permet d'ouvrir le regard sur la différence et le faire évoluer vers la tolérance, le respect de l'autre et l'enrichissement mutuel.
                     </p>
                 </div>
@@ -601,21 +602,43 @@
                 <!-- Inscription -->
                 <div class="bg-accent/10 rounded-2xl p-8">
                     <h3 class="text-2xl font-heading font-semibold mb-6 text-dark" data-i18n="practical.enrollment.title">Inscription</h3>
-                    <div class="space-y-4 mb-6">
-                        <div class="flex items-start space-x-3">
-                            <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">1</div>
-                            <p class="text-dark/80 pt-1" data-i18n="practical.enrollment.step1">Contacter la directrice pour une visite</p>
+
+                    <!-- Two pathways grid -->
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <!-- Enfants en situation de vulnérabilité - Direct -->
+                        <div class="bg-white rounded-xl p-6 border-l-4 border-primary">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <i data-lucide="heart-handshake" class="w-6 h-6 text-primary"></i>
+                                <h4 class="font-semibold text-dark" data-i18n="practical.enrollment.vulnerable.title">Enfants en situation de vulnérabilité</h4>
+                            </div>
+                            <p class="text-dark/80 text-sm mb-4" data-i18n="practical.enrollment.vulnerable.text">Inscription directe auprès de notre crèche. Contactez-nous pour organiser une visite et constituer votre dossier.</p>
+                            <a href="#contact" class="inline-flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors font-medium">
+                                <span data-i18n="practical.enrollment.vulnerable.cta">Nous contacter directement</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
                         </div>
-                        <div class="flex items-start space-x-3">
-                            <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">2</div>
-                            <p class="text-dark/80 pt-1" data-i18n="practical.enrollment.step2">Constitution du dossier</p>
-                        </div>
-                        <div class="flex items-start space-x-3">
-                            <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">3</div>
-                            <p class="text-dark/80 pt-1" data-i18n="practical.enrollment.step3">Validation de l'inscription</p>
+
+                        <!-- Autres enfants - Via RPE -->
+                        <div class="bg-white rounded-xl p-6 border-l-4 border-secondary">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <i data-lucide="building-2" class="w-6 h-6 text-secondary"></i>
+                                <h4 class="font-semibold text-dark" data-i18n="practical.enrollment.standard.title">Autres demandes</h4>
+                            </div>
+                            <p class="text-dark/80 text-sm mb-4" data-i18n="practical.enrollment.standard.text">Les inscriptions se font via le Relais Petite Enfance (RPE) de Bayonne, qui centralise les demandes et vous accompagne dans vos démarches.</p>
+                            <a href="https://www.bayonne.fr/vivre-a-bayonne/enfance-jeunesse/petite-enfance/le-relais-petite-enfance-vous-aide" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-secondary hover:text-secondary/80 transition-colors font-medium">
+                                <span data-i18n="practical.enrollment.standard.cta">Accéder au RPE</span>
+                                <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
                         </div>
                     </div>
-                    <a href="#contact" class="btn-primary" data-i18n="practical.enrollment.cta">Demander une inscription</a>
+                </div>
+
+                <!-- Link to Bayonne.fr page -->
+                <div class="mt-6 text-center">
+                    <a href="https://www.bayonne.fr/vivre-a-bayonne/enfance-jeunesse/petite-enfance/creche-associative-larche-de-noe" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-dark/60 hover:text-primary transition-colors">
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                        <span data-i18n="practical.enrollment.bayonne">Voir notre page sur Bayonne.fr</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -745,22 +768,33 @@
 
             <!-- Gallery grid -->
             <div id="gallery-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Images will be loaded via JavaScript with placeholders -->
+                <!-- Nos Espaces - Photos Mathieu Prat -->
                 <div class="gallery-item" data-category="spaces">
-                    <img src="https://images.unsplash.com/photo-1560969184-10fe8719e047?w=500&h=400&fit=crop" alt="Espace jeux" class="w-full h-64 object-cover rounded-xl cursor-pointer hover:scale-105 transition-transform" loading="lazy">
+                    <img src="/images/playground/csm_6_creche_L_ARCHE_DE_NOE__c__Mathieu_Prat_6494bc1f53.jpg" alt="Espace de jeux extérieur - Photo Mathieu Prat" class="w-full h-64 object-cover rounded-xl cursor-pointer hover:scale-105 transition-transform" loading="lazy">
                 </div>
                 <div class="gallery-item" data-category="spaces">
-                    <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=500&h=400&fit=crop" alt="Salle de repos" class="w-full h-64 object-cover rounded-xl cursor-pointer hover:scale-105 transition-transform" loading="lazy">
+                    <img src="/images/playground/Playground_1.jpg" alt="Aire de jeux - Photo Mathieu Prat" class="w-full h-64 object-cover rounded-xl cursor-pointer hover:scale-105 transition-transform" loading="lazy">
                 </div>
+                <div class="gallery-item" data-category="spaces">
+                    <img src="/images/playground/19_creche_L_ARCHE_DE_NOE__c__Mathieu_Prat.jpg" alt="Nos espaces - Photo Mathieu Prat" class="w-full h-64 object-cover rounded-xl cursor-pointer hover:scale-105 transition-transform" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="spaces">
+                    <img src="/images/playground/21_creche_L_ARCHE_DE_NOE__c__Mathieu_Prat.jpg" alt="Nos espaces - Photo Mathieu Prat" class="w-full h-64 object-cover rounded-xl cursor-pointer hover:scale-105 transition-transform" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="spaces">
+                    <img src="/images/playground/22_creche_L_ARCHE_DE_NOE__c__Mathieu_Prat.jpg" alt="Nos espaces - Photo Mathieu Prat" class="w-full h-64 object-cover rounded-xl cursor-pointer hover:scale-105 transition-transform" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="spaces">
+                    <img src="/images/playground/27_creche_L_ARCHE_DE_NOE__c__Mathieu_Prat.jpg" alt="Nos espaces - Photo Mathieu Prat" class="w-full h-64 object-cover rounded-xl cursor-pointer hover:scale-105 transition-transform" loading="lazy">
+                </div>
+                <!-- Activités -->
                 <div class="gallery-item" data-category="activities">
                     <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=500&h=400&fit=crop" alt="Activités créatives" class="w-full h-64 object-cover rounded-xl cursor-pointer hover:scale-105 transition-transform" loading="lazy">
                 </div>
                 <div class="gallery-item" data-category="activities">
                     <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=500&h=400&fit=crop" alt="Jeux éducatifs" class="w-full h-64 object-cover rounded-xl cursor-pointer hover:scale-105 transition-transform" loading="lazy">
                 </div>
-                <div class="gallery-item" data-category="spaces">
-                    <img src="https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=500&h=400&fit=crop" alt="Espace extérieur" class="w-full h-64 object-cover rounded-xl cursor-pointer hover:scale-105 transition-transform" loading="lazy">
-                </div>
+                <!-- Événements -->
                 <div class="gallery-item" data-category="events">
                     <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=500&h=400&fit=crop" alt="Événement spécial" class="w-full h-64 object-cover rounded-xl cursor-pointer hover:scale-105 transition-transform" loading="lazy">
                 </div>
@@ -1002,6 +1036,22 @@
         </div>
     </section>
 
+    <!-- Partners Section -->
+    <section id="partners" class="py-16 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-heading font-bold text-center mb-4 text-dark" data-i18n="partners.title">Nos Partenaires</h2>
+            <p class="text-center text-dark/60 mb-12" data-i18n="partners.subtitle">Ils nous soutiennent dans notre mission</p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <a href="https://www.fondationdefrance.org/" target="_blank" rel="noopener noreferrer" class="group">
+                    <img src="/images/partenaires/LOGO FDD - navy.png" alt="Fondation de France" class="h-16 md:h-20 w-auto grayscale hover:grayscale-0 transition-all group-hover:scale-105">
+                </a>
+                <a href="https://www.altarea.com/" target="_blank" rel="noopener noreferrer" class="group">
+                    <img src="/images/partenaires/RVB_ALTAREA_HD.jpg" alt="Altarea" class="h-16 md:h-20 w-auto grayscale hover:grayscale-0 transition-all group-hover:scale-105">
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-dark text-white py-12">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -1009,6 +1059,17 @@
                 <div>
                     <img src="/images/logo.png" alt="L'Arche de Noé" class="h-10 w-auto mb-4 brightness-0 invert" style="max-width: 150px;">
                     <p class="text-white/80">4, avenue Vital Biraben<br>64100 BAYONNE</p>
+                    <div class="flex items-center space-x-4 mt-4">
+                        <a href="https://www.facebook.com/share/1F6EsTcdUb/" target="_blank" rel="noopener noreferrer" class="text-white/80 hover:text-white transition-colors" aria-label="Facebook">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/crèche-l-arche-de-noé/" target="_blank" rel="noopener noreferrer" class="text-white/80 hover:text-white transition-colors" aria-label="LinkedIn">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/crechelarchedenoe" target="_blank" rel="noopener noreferrer" class="text-white/80 hover:text-white transition-colors" aria-label="Instagram">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                    </div>
                 </div>
 
                 <div>
