@@ -244,7 +244,6 @@ const translations = {
       address: 'Bayonne, France',
       legal: 'Mentions légales',
       privacy: 'Politique de confidentialité',
-      cookies: 'Cookies',
       copyright: '© 2025 Crèche L\'Arche de Noé. Tous droits réservés.'
     },
 
@@ -500,7 +499,6 @@ const translations = {
       address: 'Baiona, Frantzia',
       legal: 'Lege oharrak',
       privacy: 'Pribatutasun politika',
-      cookies: 'Cookies',
       copyright: '© 2025 Noeren Ontzia Haurtzaindegia. Eskubide guztiak gordeta.'
     },
 
